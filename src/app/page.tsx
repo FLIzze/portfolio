@@ -1,26 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import About from "./components/about/page";
 
 export default function Home() {
-  const fields: string[] = ["PROJETS", "CONTACT", "22CM", "RATIO", "APAGNAN", "PESSI"];
+  const fields: string[] = ["ABOUT", "PROJECTS", "SKILLS", "CONTACT"];
   const [usedField, setUsedField] = useState<number>(0);
 
   const fieldFocus = (id: string) => {
-    try {
-      const div = document.getElementById(usedField!.toString());
-      div!.style.background = 'rgb(136, 212, 152)';
-    } catch (error) {
-    }
     const div = document.getElementById(id);
-    div!.style.background = 'rgb(100, 165, 116)';
+    div!.style.background = '';
     setUsedField(parseInt(id));
   };
 
 
   return (
-    <div className="h-screen bg-white flex items-center">
-      <nav className="w-1/5 h-screen relative">
+    <div className="h-full flex font-mono text-white bg-gradient-to-b to-green-300 from-[#88D498]">
+      <nav className="w-1/5 h-screen bg-white border-r border-black">
         <div className="flex items-center justify-center h-full flex-col text-xl text-[#3E505B] z-10">
           {fields.map((field: string, index: number) => (
             <div className="w-full z-20">
@@ -37,9 +33,7 @@ export default function Home() {
           ))}
         </div>
       </nav>
-      <div className="flex w-full justify-center text-2xl text-[#64a574] font-bold">
-        {fields[usedField!]}
-      </div>
+      <About fields={fields} usedField={usedField} />
     </div>
   );
 }
