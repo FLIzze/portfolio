@@ -4,6 +4,7 @@ interface About {
 }
 
 const About: React.FC<About> = ({fields, usedField}) => {
+    
     return (
         <div className="text-2xl w-full mt-28">
             {fields[usedField] == fields[0] && (
