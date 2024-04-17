@@ -2,7 +2,7 @@ const About: React.FC<Fields> = ({fields, usedFields}) => {
     
     return (
         <div>
-            {fields[usedFields] == fields[0] && (
+            {fields[usedFields] == "A propos" && (
                 <div className="text-xl w-full mt-10">
                     <div className="mx-24 bg-black h-fit p-4 rounded-sm border border-black">
                     <p className="mb-12 text-4xl font-bold text-green-400">BEL Alexandre</p>

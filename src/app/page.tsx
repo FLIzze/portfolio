@@ -5,9 +5,10 @@ import About from "./components/about/page";
 import Forum from "./components/forum/page";
 import RevengeOnInove from "./components/revenge-on-inove/page";
 import Cv from "./components/cv/page";
+import Ecommerce from "./components/e-commerce/page";
 
 export default function Home() {
-  const fields: string[] = ["A propos", "E-commerce", "Forum", "Doftopia", "Revenge on Inove", "BlackJack Data", "Impostor Bot", "Not named yet", "Portfolio", "Cv"];
+  const fields: string[] = ["A propos", "E-commerce", "Forum", "Doftopia", "Revenge on Inove", "BlackJack Data", "Impostor Bot"];
   const [usedField, setUsedField] = useState<number>(0);
 
   const fieldFocus = (id: string) => {
@@ -37,7 +38,7 @@ export default function Home() {
         <About fields={fields} usedFields={usedField}/>
         <Forum fields={fields} usedFields={usedField}/>
         <RevengeOnInove fields={fields} usedFields={usedField}/>
-        <Cv fields={fields} usedFields={usedField}></Cv>
+        <Ecommerce fields={fields} usedFields={usedField}/>
         </div>
     </div>
   );
