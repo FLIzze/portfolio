@@ -5,9 +5,10 @@ import About from "./components/about/page";
 import Forum from "./components/forum/page";
 import RevengeOnInove from "./components/revenge-on-inove/page";
 import Cv from "./components/cv/page";
+import ImpostorBot from "./components/impostor-bot/page";
 
 export default function Home() {
-  const fields: string[] = ["A propos", "E-commerce", "Forum", "Doftopia", "Revenge on Inove", "BlackJack Data", "Impostor Bot", "Not named yet", "Portfolio", "Cv"];
+  const fields: string[] = ["A propos", "E-commerce", "Doftopia", "Revenge on Inove", "Forum", "BlackJack Data", "Impostor Bot", "Cv"];
   const [usedField, setUsedField] = useState<number>(0);
 
   const fieldFocus = (id: string) => {
@@ -34,10 +35,11 @@ export default function Home() {
         </div>
       </nav>
       <div className="w-4/5 h-screen overflow-hidden">
-        <About fields={fields} usedFields={usedField}/>
-        <Forum fields={fields} usedFields={usedField}/>
-        <RevengeOnInove fields={fields} usedFields={usedField}/>
-        <Cv fields={fields} usedFields={usedField}></Cv>
+        <About fields={fields} usedField={usedField}/>
+        <Forum fields={fields} usedField={usedField}/>
+        <RevengeOnInove fields={fields} usedField={usedField}/>
+        <ImpostorBot fields={fields} usedField={usedField}></ImpostorBot>
+        {/* <Cv fields={fields} usedField={usedField}></Cv> */}
         </div>
     </div>
   );

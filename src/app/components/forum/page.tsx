@@ -1,10 +1,15 @@
-const Forum: React.FC<Fields> = ({fields, usedFields}) => {
+const Forum: React.FC<Fields> = ({fields, usedField}) => {
     return (
         <div>
-            {fields[usedFields] == "Forum" && (
+            {fields[usedField] == "Forum" && (
                 <div className="px-20 h-screen overflow-y-auto mt-10">
-                    <h1 className="text-4xl flex font-bold text-green-400">Forum</h1>
-                    <p className="my-6 text-xl">Forum moche mais fonctionnel. Realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
+                    <div className="flex">
+                        <h1 className="text-4xl flex font-bold text-green-400 mr-4">Forum</h1>
+                        <a href="https://github.com/FLIzze/forum" target="blank">
+                            <img src="github-logo.png" alt="github" className="w-11 h-11"/>
+                        </a>
+                    </div>
+                    <p className="my-5 text-xl">Forum entièrement fonctionnel, realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
                     <div className="text-2xl">
                         <h2 className="font-bold text-green-400">Fonctionnalités</h2>
                         <ul className="mb-8 text-xl list-disc ml-10">
@@ -17,9 +22,14 @@ const Forum: React.FC<Fields> = ({fields, usedFields}) => {
                             <li>Consultation du profil d'un autre utilisateur et envoi de messages privés</li>
                             <li>Modification et suppression des sujets ou des commentaires appartenant à l'utilisateur</li>
                         </ul>
-                        <img src="/forum/home.png" draggable="false" alt="forum home" className="mb-6"/>
-                        <img src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6"/>
-                        <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
+                        <div>
+                            <p className="flex justify-center text-green-400 mb-4 text-xl font-bold">[Accueil]</p>
+                            <img src="/forum/home.png" draggable="false" alt="forum home" className="mb-6"/>
+                            <p className="flex justify-center text-green-400 mb-4 text-xl font-bold">[Sujets]</p>
+                            <img src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6"/>
+                            <p className="flex justify-center text-green-400 mb-4 text-xl font-bold">[Message privé]</p>
+                            <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
+                        </div>
                     </div>
                 </div>
             )}
