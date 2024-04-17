@@ -1,7 +1,7 @@
-const Forum: React.FC<Fields> = ({fields, usedField}) => {
+const Forum: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>
-            {fields[usedField] == "Forum" && (
+            {fields[usedFields] == "Forum" && (
                 <div className="px-20 h-screen overflow-y-auto mt-10">
                     <div className="flex">
                         <h1 className="text-4xl flex font-bold text-green-400 mr-4">Forum</h1>

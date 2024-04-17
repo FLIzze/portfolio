@@ -4,8 +4,8 @@ import { useState } from "react";
 import About from "./components/about/page";
 import Forum from "./components/forum/page";
 import RevengeOnInove from "./components/revenge-on-inove/page";
-import Cv from "./components/cv/page";
 import ImpostorBot from "./components/impostor-bot/page";
+import Ecommerce from "./components/e-commerce/page";
 
 export default function Home() {
   const fields: string[] = ["A propos", "E-commerce", "Doftopia", "Revenge on Inove", "Forum", "BlackJack Data", "Impostor Bot", "Cv"];
@@ -35,12 +35,12 @@ export default function Home() {
         </div>
       </nav>
       <div className="w-4/5 h-screen overflow-hidden">
-        <About fields={fields} usedField={usedField}/>
-        <Forum fields={fields} usedField={usedField}/>
-        <RevengeOnInove fields={fields} usedField={usedField}/>
-        <ImpostorBot fields={fields} usedField={usedField}></ImpostorBot>
-        {/* <Cv fields={fields} usedField={usedField}></Cv> */}
-        </div>
+        <Ecommerce fields={fields} usedFields={usedField}/>
+        <About fields={fields} usedFields={usedField}/>
+        <Forum fields={fields} usedFields={usedField}/>
+        <RevengeOnInove fields={fields} usedFields={usedField}/>
+        <ImpostorBot fields={fields} usedFields={usedField}/>
+      </div>
     </div>
   );
 }

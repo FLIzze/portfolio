@@ -1,7 +1,7 @@
-const ImpostorBot: React.FC<Fields> = ({fields, usedField}) => {
+const ImpostorBot: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>
-            {fields[usedField] == "Impostor Bot" && (
+            {fields[usedFields] == "Impostor Bot" && (
                 <div className="px-20 h-screen overflow-y-auto mt-10 text-xl">
                     <h1 className="text-4xl text-green-400 font-bold">Impostor Bot</h1>
                     <p className="my-5 text-justify">Bot discord realisé en <a className="text-green-400">Javascript</a> et utilisant <a className="text-green-400">l'API de league of legends</a>. Son principe est celui de l'ancien jeu de solary <a href="https://amonglegends.fr/" target="blank" className="text-green-400">Among Legends</a> cependant ce jeu n'est plus maintenu. Aimant le jeu j'ai décidé de le recoder mais en tant que bot discord.</p>

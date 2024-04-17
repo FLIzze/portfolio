@@ -1,7 +1,7 @@
-const RevengeOnInove: React.FC<Fields> = ({fields, usedField}) => {
+const RevengeOnInove: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>
-            {fields[usedField] == "Revenge on Inove" && (
+            {fields[usedFields] == "Revenge on Inove" && (
                 <div className="text-xl px-20 h-screen overflow-y-auto mt-10">
                     <div className="flex">
                         <h1 className="text-4xl font-bold text-green-400 mr-4">Revenge on Inove</h1>
