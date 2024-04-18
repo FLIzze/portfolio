@@ -1,6 +1,6 @@
 import React from "react";
 
-const Forum: React.FC<any> = ({fields, usedFields}) => {
+const Forum = ( {fields, usedFields} ) => {
     return (
         <div>
             {fields[usedFields] == "Forum" && (

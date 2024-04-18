@@ -1,8 +1,8 @@
 import React from "react";
 
-const About: React.FC<any> = ({fields, usedFields}) => {
-    console.log(fields, usedFields);
+const About = ( {fields, usedFields} ) => {
     return (
+        
         <div>
             {fields[usedFields] == "A propos" && (
                 <div className="text-xl w-full mt-10">

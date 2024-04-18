@@ -1,4 +1,4 @@
-const Ecommerce: React.FC<any> = ({fields, usedFields}) => {
+const Ecommerce = ( {fields, usedFields} ) => {
     return (
         <div>
             {fields[usedFields] == "E-commerce" && (
