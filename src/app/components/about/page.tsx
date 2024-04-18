@@ -1,7 +1,6 @@
 import React from "react";
 
-const About = (fields: any, usedFields: number) => {
-    
+const About = ( fields: any, usedFields: number ) => {
     return (
         <div>
             {fields[usedFields] == "A propos" && (

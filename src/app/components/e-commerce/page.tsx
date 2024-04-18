@@ -1,6 +1,4 @@
-import { Fields } from "@/app/interface";
-
-const Ecommerce: React.FC<Fields> = ({fields, usedFields}) => {
+const Ecommerce = ( fields: any, usedFields: any ) => {
     return (
         <div>
             {fields[usedFields] == "E-commerce" && (

@@ -1,7 +1,6 @@
-import { Fields } from "@/app/interface";
 import React from "react";
 
-export const Forum: React.FC<Fields> = ({fields, usedFields}) => {
+const Forum = ( fields: any, usedFields: any ) => {
     return (
         <div>
             {fields[usedFields] == "Forum" && (
