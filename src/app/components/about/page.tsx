@@ -1,6 +1,7 @@
 import React from "react";
 
-const About = ( fields: any, usedFields: number ) => {
+const About = ({ fields, usedFields }: { fields: string[], usedFields: number }) => {
+    console.log(fields, usedFields);
     return (
         <div>
             {fields[usedFields] == "A propos" && (

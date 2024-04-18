@@ -1,6 +1,6 @@
 import React from "react";
 
-const Forum = ( fields: any, usedFields: any ) => {
+const Forum = ({ fields, usedFields }: { fields: string[], usedFields: number }) => {
     return (
         <div>
             {fields[usedFields] == "Forum" && (
