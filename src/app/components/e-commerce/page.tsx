@@ -1,4 +1,4 @@
-const Ecommerce = ( fields: any, usedFields: any) => {
+const Ecommerce = ({ fields, usedFields }: { fields: string[], usedFields: number }) => {
     return (
         <div>
             {fields[usedFields] == "E-commerce" && (
