@@ -1,4 +1,7 @@
-const Forum: React.FC<Fields> = ({fields, usedFields}) => {
+import { Fields } from "@/app/interface";
+import React from "react";
+
+export const Forum: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>
             {fields[usedFields] == "Forum" && (

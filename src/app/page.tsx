@@ -4,7 +4,6 @@ import { useState } from "react";
 import About from "./components/about/page";
 import Forum from "./components/forum/page";
 import RevengeOnInove from "./components/revenge-on-inove/page";
-import Cv from "./components/cv/page";
 import Ecommerce from "./components/e-commerce/page";
 
 export default function Home() {
@@ -39,7 +38,7 @@ export default function Home() {
         <Forum fields={fields} usedFields={usedField}/>
         <RevengeOnInove fields={fields} usedFields={usedField}/>
         <Ecommerce fields={fields} usedFields={usedField}/>
-        </div>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,6 @@
+import { Fields } from "@/app/interface";
+import React from "react";
+
 const RevengeOnInove: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>

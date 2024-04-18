@@ -1,12 +1,14 @@
+import { Fields } from "@/app/interface";
+
 const Ecommerce: React.FC<Fields> = ({fields, usedFields}) => {
     return (
         <div>
             {fields[usedFields] == "E-commerce" && (
-                <div className="text-xl w-full mt-10 px-20 overflow-y-auto h-screen">
+                <div className="w-full mt-10 px-20 overflow-y-auto h-screen text-xl">
                     <h1 className="font-bold text-4xl text-green-400">E-commerce</h1>
                     <p className="my-8">Site d'e-commerce realise en <a className="text-green-400">Symfony</a> avec une base de donnee <a className="text-green-400">MySQL</a>.</p>
-                    <h2 className="font-bold text-green-400 text-2xl">Fonctionnalités</h2>
-                    <ul className="ml-12 list-disc text-justify">
+                    <h2 className="font-bold text-green-400">Fonctionnalités</h2>
+                    <ul className="ml-10 list-disc text-justify mb-8">
                         <li>Accueil: La page d'accueil vous permet d'explorer les arrangements floraux, les offres spéciales et les collections saisonnières.</li>
                         <li>Marketplace: Explorez une variété de fleurs et de compositions florales dans notre marché virtuel, organisé en catégories pour correspondre à chaque occasion spéciale.</li>
                         <li>Connexion/Création de compte: Les utilisateurs peuvent se connecter à leur compte existant pour gérer leurs préférences et suivre leurs commandes, ou créer un nouveau compte pour bénéficier d'avantages supplémentaires, comme la sauvegarde des informations de paiement et des adresses de livraison.</li>
@@ -20,25 +22,23 @@ const Ecommerce: React.FC<Fields> = ({fields, usedFields}) => {
                     </ul>   
                     <div>
                         <img src="/e-commerce" alt="" />
-                        <p className="text-green-400 w-full flex justify-center py-3">[Home]</p>
+                        <p className="text-green-400 w-full flex justify-center my-8">[Home]</p>
                         <img src="/e-commerce/home.png" alt="home" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Article]</p>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[Article]</p>
                         <img src="/e-commerce/article.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Review]</p>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[Review]</p>
                         <img src="/e-commerce/reviews.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Marketplace]</p>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[Marketplace]</p>
                         <img src="/e-commerce/marketplace.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[shopping-cart]</p>
-                        <img src="/e-commerce/shopping-cart-sidebar.png" alt="" className="mb-3"/>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[shopping-cart]</p>
+                        <img src="/e-commerce/shopping-cart-sidebar.png" alt="" className="my-3"/>
                         <img src="/e-commerce/shopping-cart.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[checkout-details]</p>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[checkout-details]</p>
                         <img src="/e-commerce/checkout-details.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[stripe]</p>
+                        <p className="text-green-400 w-full flex justify-center  my-8">[stripe]</p>
                         <img src="/e-commerce/stripe.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[dashboard]</p>
-                        <img src="/e-commerce/dashboard.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Home]</p>
-                        <img src="/e-commerce" alt="" />
+                        <p className="text-green-400 w-full flex justify-center  my-8">[dashboard]</p>
+                        <img src="/e-commerce/dashboard.png" alt="dashboard" className="mb-16"/>
                     </div>
                 </div>
             )}

@@ -1,3 +1,4 @@
+import { Fields } from "@/app/interface";
 import React from 'react';
 
 const Cv: React.FC<Fields>  = ({fields, usedFields}) => {

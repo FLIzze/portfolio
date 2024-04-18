@@ -1,4 +1,6 @@
-const About: React.FC<Fields> = ({fields, usedFields}) => {
+import React from "react";
+
+const About = (fields: any, usedFields: number) => {
     
     return (
         <div>
