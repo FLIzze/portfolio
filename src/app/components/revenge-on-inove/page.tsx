@@ -1,4 +1,4 @@
-const RevengeOnInove = ({ fields, usedFields }: { fields: string[], usedFields: number }) => {
+const RevengeOnInove: React.FC<any> = ({fields, usedFields}) => {
     return (
         <div>
             {fields[usedFields] == "Revenge on Inove" && (

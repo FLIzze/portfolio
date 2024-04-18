@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = ({ fields, usedFields }: { fields: string[], usedFields: number }) => {
+const About: React.FC<any> = ({fields, usedFields}) => {
     console.log(fields, usedFields);
     return (
         <div>
