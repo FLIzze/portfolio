@@ -1,9 +1,8 @@
 import React from "react";
 
-const Forum = ( {fields, usedFields} ) => {
+const Forum = () => {
     return (
         <div>
-            {fields[usedFields] == "Forum" && (
                 <div className="px-20 h-screen overflow-y-auto mt-10">
                     <h1 className="text-4xl flex font-bold text-green-400">Forum</h1>
                     <p className="my-6 text-xl">Forum moche mais fonctionnel. Realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
@@ -24,7 +23,6 @@ const Forum = ( {fields, usedFields} ) => {
                         <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
                     </div>
                 </div>
-            )}
         </div>
     )
 }

@@ -33,10 +33,18 @@ export default function Home() {
         </div>
       </nav>
       <div className="w-4/5 h-screen overflow-hidden">
-        <About fields={fields} usedFields={usedField}/>
-        <Forum fields={fields} usedFields={usedField}/>
-        <RevengeOnInove fields={fields} usedFields={usedField}/>
-        <Ecommerce fields={fields} usedFields={usedField}/>
+        {fields[usedField] == "A propos" && (
+          <About/>
+        )}
+        {fields[usedField] == "Forum" && (
+          <Forum/>
+        )}
+        {fields[usedField] == "Revenge on Inove" && (
+          <RevengeOnInove/>
+        )}
+        {fields[usedField] == "E-commerce" && (
+          <Ecommerce/>
+        )}
       </div>
     </div>
   );

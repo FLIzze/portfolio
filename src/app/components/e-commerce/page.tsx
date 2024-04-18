@@ -1,7 +1,6 @@
-const Ecommerce = ( {fields, usedFields} ) => {
+const Ecommerce = () => {
     return (
         <div>
-            {fields[usedFields] == "E-commerce" && (
                 <div className="w-full mt-10 px-20 overflow-y-auto h-screen text-xl">
                     <h1 className="font-bold text-4xl text-green-400">E-commerce</h1>
                     <p className="my-8">Site d'e-commerce realise en <a className="text-green-400">Symfony</a> avec une base de donnee <a className="text-green-400">MySQL</a>.</p>
@@ -39,7 +38,6 @@ const Ecommerce = ( {fields, usedFields} ) => {
                         <img src="/e-commerce/dashboard.png" alt="dashboard" className="mb-16"/>
                     </div>
                 </div>
-            )}
         </div>
     )
 }

@@ -1,7 +1,6 @@
-const RevengeOnInove = ( {fields, usedFields} ) => {
+const RevengeOnInove = () => {
     return (
         <div>
-            {fields[usedFields] == "Revenge on Inove" && (
                 <div className="text-xl px-20 h-screen overflow-y-auto mt-10">
                     <h1 className="text-4xl font-bold text-green-400 mb-8">Revenge on Inove</h1>
                     <p className="my-6">Bienvenue dans Revenge On Inove, un jeu d'aventure développé en <a className="text-bold text-green-400">Python</a> avec Pygame. Dans ce jeu, vous incarnez un étudiant astucieux qui a décidé de hacker son école. Cependant, cette action a rendu tous les étudiants, professeurs, mentors et membres de l'administration furieux contre vous. Pour regagner le contrôle, vous devez vous aventurer dans chaque étage du bâtiment et affronter vos adversaires.</p>
@@ -23,7 +22,6 @@ const RevengeOnInove = ( {fields, usedFields} ) => {
                     <img src="/revenge-on-Inove/fight.gif" alt="fight gif" className="mb-8 bg-white p-2"/>
                     <img src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2 mb-16"/>
                 </div>
-            )}
         </div>
     )
 }
