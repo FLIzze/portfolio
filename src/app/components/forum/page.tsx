@@ -1,12 +1,13 @@
-const Forum: React.FC<Fields> = ({fields, usedFields}) => {
+const Forum = () => {
     return (
         <div>
-            {fields[usedFields] == "Forum" && (
                 <div className="px-20 h-screen overflow-y-auto mt-10">
                     <div className="flex">
-                        <h1 className="text-4xl flex font-bold text-green-400 mr-4">Forum</h1>
+                        <a href="https://forum.alexandrebel.me" target="blank">
+                            <h1 className="text-4xl flex font-bold border-b border-green-400 mr-4 text-green-400 hover:border-b-0">Forum</h1>
+                        </a>
                         <a href="https://github.com/FLIzze/forum" target="blank">
-                            <img src="github-logo.png" alt="github" className="w-11 h-11"/>
+                            <img src="github-logo.png" alt="github" className="w-10 h-10"/>
                         </a>
                     </div>
                     <p className="my-5 text-xl">Forum entièrement fonctionnel, realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
@@ -32,7 +33,6 @@ const Forum: React.FC<Fields> = ({fields, usedFields}) => {
                         </div>
                     </div>
                 </div>
-            )}
         </div>
     )
 }

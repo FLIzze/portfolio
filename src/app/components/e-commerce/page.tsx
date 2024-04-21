@@ -1,10 +1,9 @@
-const Ecommerce: React.FC<Fields> = ({fields, usedFields}) => {
+const Ecommerce = () => {
     return (
         <div>
-            {fields[usedFields] == "E-commerce" && (
                 <div className="text-xl w-full mt-10 px-20 overflow-y-auto h-screen">
                     <h1 className="font-bold text-4xl text-green-400">E-commerce</h1>
-                    <p className="my-8">Site d'e-commerce realise en <a className="text-green-400">Symfony</a> avec une base de donnee <a className="text-green-400">MySQL</a>.</p>
+                    <p className="my-5">Site d'e-commerce realise en <a className="text-green-400">Symfony</a> avec une base de donnee <a className="text-green-400">MySQL</a>.</p>
                     <h2 className="font-bold text-green-400 text-2xl">Fonctionnalités</h2>
                     <ul className="ml-12 list-disc text-justify">
                         <li>Accueil: La page d'accueil vous permet d'explorer les arrangements floraux, les offres spéciales et les collections saisonnières.</li>
@@ -19,29 +18,25 @@ const Ecommerce: React.FC<Fields> = ({fields, usedFields}) => {
                         <li>Panier: Ajoutez vos fleurs préférées à votre panier et suivez facilement vos sélections, avec la possibilité de créer plusieurs paniers pour différentes occasions.</li>
                     </ul>   
                     <div>
-                        <img src="/e-commerce" alt="" />
-                        <p className="text-green-400 w-full flex justify-center py-3">[Home]</p>
-                        <img src="/e-commerce/home.png" alt="home" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Article]</p>
-                        <img src="/e-commerce/article.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Review]</p>
-                        <img src="/e-commerce/reviews.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Marketplace]</p>
-                        <img src="/e-commerce/marketplace.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[shopping-cart]</p>
-                        <img src="/e-commerce/shopping-cart-sidebar.png" alt="" className="mb-3"/>
-                        <img src="/e-commerce/shopping-cart.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[checkout-details]</p>
-                        <img src="/e-commerce/checkout-details.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[stripe]</p>
-                        <img src="/e-commerce/stripe.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[dashboard]</p>
-                        <img src="/e-commerce/dashboard.png" alt="" />
-                        <p className="text-green-400 w-full flex justify-center  py-3">[Home]</p>
-                        <img src="/e-commerce" alt="" />
+                        <p className="text-green-400 w-full flex justify-center mb-4">[Home]</p>
+                        <img src="/e-commerce/home.png" alt="home" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[Article]</p>
+                        <img src="/e-commerce/article.png" alt="articles" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[Review]</p>
+                        <img src="/e-commerce/reviews.png" alt="review" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[Marketplace]</p>
+                        <img src="/e-commerce/marketplace.png" alt="marketplace" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[shopping-cart]</p>
+                        <img src="/e-commerce/shopping-cart-sidebar.png" alt="shopping-cart-side" className="mb-3" draggable="false"/>
+                        <img src="/e-commerce/shopping-cart.png" alt="shopping-cart" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[checkout-details]</p>
+                        <img src="/e-commerce/checkout-details.png" alt="checkout-details" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[stripe]</p>
+                        <img src="/e-commerce/stripe.png" alt="stripe" className="mb-6" draggable="false"/>
+                        <p className="text-green-400 w-full flex justify-center mb-4">[dashboard]</p>
+                        <img src="/e-commerce/dashboard.png" alt="dashboard" className="mb-16" draggable="false"/>
                     </div>
                 </div>
-            )}
         </div>
     )
 }

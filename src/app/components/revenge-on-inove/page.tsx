@@ -1,12 +1,11 @@
-const RevengeOnInove: React.FC<Fields> = ({fields, usedFields}) => {
+const RevengeOnInove = () => {
     return (
         <div>
-            {fields[usedFields] == "Revenge on Inove" && (
                 <div className="text-xl px-20 h-screen overflow-y-auto mt-10">
                     <div className="flex">
                         <h1 className="text-4xl font-bold text-green-400 mr-4">Revenge on Inove</h1>
                         <a href="https://github.com/geoffrey-diederichs/Revenge_On_Inove" target="blank">
-                            <img src="github-logo.png" alt="github" className="w-11 h-11"/>
+                            <img src="github-logo.png" alt="github" className="w-10 h-10"/>
                         </a>
                     </div>
                     <p className="my-5 text-justify">Bienvenue dans Revenge On Inove, un jeu d'aventure développé en <a className="text-bold text-green-400">Python</a> avec Pygame. Dans ce jeu, vous incarnez un étudiant astucieux qui a décidé de hacker son école. Cependant, cette action a rendu tous les étudiants, professeurs, mentors et membres de l'administration furieux contre vous. Pour regagner le contrôle, vous devez vous aventurer dans chaque étage du bâtiment et affronter vos adversaires.</p>
@@ -33,7 +32,6 @@ const RevengeOnInove: React.FC<Fields> = ({fields, usedFields}) => {
                         <img src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2 mb-16" draggable="false"/>
                     </div>
                 </div>
-            )}
         </div>
     )
 }

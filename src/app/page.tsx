@@ -8,7 +8,7 @@ import ImpostorBot from "./components/impostor-bot/page";
 import Ecommerce from "./components/e-commerce/page";
 
 export default function Home() {
-  const fields: string[] = ["A propos", "E-commerce", "Doftopia", "Revenge on Inove", "Forum", "BlackJack Data", "Impostor Bot", "Cv"];
+  const fields: string[] = ["A propos", "E-commerce", "Doftopia", "Revenge on Inove", "Forum", "BlackJack Data"];
   const [usedField, setUsedField] = useState<number>(0);
 
   const fieldFocus = (id: string) => {
@@ -35,11 +35,21 @@ export default function Home() {
         </div>
       </nav>
       <div className="w-4/5 h-screen overflow-hidden">
-        <Ecommerce fields={fields} usedFields={usedField}/>
-        <About fields={fields} usedFields={usedField}/>
-        <Forum fields={fields} usedFields={usedField}/>
-        <RevengeOnInove fields={fields} usedFields={usedField}/>
-        <ImpostorBot fields={fields} usedFields={usedField}/>
+        {fields[usedField] == "Forum" && (
+          <Forum/>
+        )}
+
+        {fields[usedField] == "Revenge on Inove" && (
+          <RevengeOnInove/>
+        )}
+
+        {fields[usedField] == "A propos" && (
+          <About/>
+        )}
+
+        {fields[usedField] == "E-commerce" && (
+          <Ecommerce/>
+        )}
       </div>
     </div>
   );
