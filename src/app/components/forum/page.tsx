@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Forum = () => {
     return (
@@ -22,11 +23,11 @@ const Forum = () => {
                         </ul>
                         <div className="text-xl">
                             <p className="text-green-400 w-full flex justify-center my-6">[Home]</p>
-                            <img src="/forum/home.png" draggable="false" alt="forum home" className="mb-6"/>
+                            <Image src="/forum/home.png" draggable="false" alt="forum home" className="mb-6" width={1920} height={1080}/>
                             <p className="text-green-400 w-full flex justify-center my-6">[Sujets]</p>
-                            <img src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6"/>
+                            <Image src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6" width={1920} height={1080}/>
                             <p className="text-green-400 w-full flex justify-center my-6">[Messages privés]</p>
-                            <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
+                            <Image src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16" width={1920} height={1080}/>
                         </div>
                     </div>
                 </div>

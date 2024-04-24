@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Ecommerce = () => {
     return (
         <div>
@@ -21,22 +23,22 @@ const Ecommerce = () => {
                     </ul>   
                     <div>
                         <p className="text-green-400 w-full flex justify-center my-6">[Home]</p>
-                        <img src="/e-commerce/home.png" alt="home" />
+                        <Image src="/e-commerce/home.png" alt="home" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[Article]</p>
-                        <img src="/e-commerce/article.png" alt="" />
+                        <Image src="/e-commerce/article.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[Review]</p>
-                        <img src="/e-commerce/reviews.png" alt="" />
+                        <Image src="/e-commerce/reviews.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[Marketplace]</p>
-                        <img src="/e-commerce/marketplace.png" alt="" />
+                        <Image src="/e-commerce/marketplace.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[shopping-cart]</p>
-                        <img src="/e-commerce/shopping-cart-sidebar.png" alt="" className="my-3"/>
-                        <img src="/e-commerce/shopping-cart.png" alt="" />
+                        <Image src="/e-commerce/shopping-cart-sidebar.png" alt="" className="my-3"width={1920} height={1080} draggable="false"/>
+                        <Image src="/e-commerce/shopping-cart.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[checkout-details]</p>
-                        <img src="/e-commerce/checkout-details.png" alt="" />
+                        <Image src="/e-commerce/checkout-details.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[stripe]</p>
-                        <img src="/e-commerce/stripe.png" alt="" />
+                        <Image src="/e-commerce/stripe.png" alt="" width={1920} height={1080} draggable="false"/>
                         <p className="text-green-400 w-full flex justify-center  my-6">[dashboard]</p>
-                        <img src="/e-commerce/dashboard.png" alt="dashboard" className="mb-16"/>
+                        <Image src="/e-commerce/dashboard.png" alt="dashboard" className="mb-16"width={1920} height={1080} draggable="false"/>
                     </div>
                 </div>
         </div>

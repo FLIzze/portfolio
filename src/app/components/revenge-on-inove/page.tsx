@@ -19,11 +19,11 @@ const RevengeOnInove = () => {
                         <li>Répétez le processus</li>
                     </ul>
                     <p className="text-green-400 w-full flex justify-center my-6">[Dialogue]</p>
-                    <img src="/revenge-on-Inove/dialogue.gif" alt="dialogue gif" className="mb-8 bg-white p-2"/>
+                    <img src="/revenge-on-Inove/dialogue.gif" alt="dialogue gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false"/>
                     <p className="text-green-400 w-full flex justify-center my-6">[Combat]</p>
-                    <img src="/revenge-on-Inove/fight.gif" alt="fight gif" className="mb-8 bg-white p-2"/>
+                    <img src="/revenge-on-Inove/fight.gif" alt="fight gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false"/>
                     <p className="text-green-400 w-full flex justify-center my-6">[Ascenseur]</p>
-                    <img src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2 mb-16"/>
+                    <img src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2 mb-16" width={1920} height={1080} draggable="false"/>
                 </div>
         </div>
     )

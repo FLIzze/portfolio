@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
     return (
@@ -10,10 +11,10 @@ const About = () => {
                     <p className="mt-10 font-bold text-green-400">Construisons quelque chose ensemble.</p>
                     <div className="flex gap-6">
                         <a href="https://www.linkedin.com/in/abel0/" target="blank">
-                            <img src="linkedin.png" alt="linkedin" className="h-16 w-16 mt-8 object-contain"/>
+                            <Image src="/linkedin.png" alt="linkedin" className="mt-8 object-contain" width={70} height={70}/>
                         </a>
                         <a href="https://github.com/flizze" target="blank">
-                            <img src="github.png" alt="github" className="h-16 w-16 mt-8 object-contain"/>
+                            <Image src="/github.png" alt="github" className="mt-8 object-contain" width={70} height={70}/>
                         </a>
                     </div>
                     </div>
