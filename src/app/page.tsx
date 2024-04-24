@@ -25,11 +25,11 @@ export default function Home() {
                   <div>
                     {index == 0 ? (
                       <div>
-                        <p className="pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-[#3d3d3d] hover:bg-white hover:font-bold hover:text-[#3a3737] w-full cursor-pointer border-white border-b lg:hover:w-[115%] transition-all duration-200 border-r border-l border-t lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
+                        <p className="lg:pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-[#3d3d3d] hover:bg-white hover:font-bold hover:text-[#3a3737] w-full cursor-pointer border-white border-b lg:hover:w-[115%] transition-all duration-200 border-r border-l border-t lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
                       </div>
                     ) : (
                       <div>
-                        <p className="pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-[#3d3d3d] hover:bg-white hover:font-bold hover:text-[#3a3737] w-full cursor-pointer border-white border-b lg:hover:w-[115%] transition-all duration-200 border-r border-l lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
+                        <p className="lg:pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-[#3d3d3d] hover:bg-white hover:font-bold hover:text-[#3a3737] w-full cursor-pointer border-white border-b lg:hover:w-[115%] transition-all duration-200 border-r border-l lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
                       </div>
                     )}
                   </div>
