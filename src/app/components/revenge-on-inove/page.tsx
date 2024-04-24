@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const RevengeOnInove = () => {
     return (
         <div>
@@ -21,15 +23,15 @@ const RevengeOnInove = () => {
                 <div className="pb-16">
                     <p className="text-green-500 w-full flex justify-center my-6">[Dialogue]</p>
                     <a href="/revenge-on-Inove/dialogue.gif" target="blank">
-                        <img src="/revenge-on-Inove/dialogue.gif" alt="dialogue gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false"/>
+                        <Image src="/revenge-on-Inove/dialogue.gif" alt="dialogue gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false" priority={true}/>
                     </a>
                     <p className="text-green-500 w-full flex justify-center my-6">[Combat]</p>
                     <a href="/revenge-on-Inove/fight.gif" target="blank">
-                        <img src="/revenge-on-Inove/fight.gif" alt="fight gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false"/>
+                        <Image src="/revenge-on-Inove/fight.gif" alt="fight gif" className="mb-8 bg-white p-2" width={1920} height={1080} draggable="false" priority={true}/>
                     </a>
                     <p className="text-green-500 w-full flex justify-center my-6">[Ascenseur]</p>
                     <a href="/revenge-on-Inove/elevator.gif" target="blank">
-                        <img src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2" width={1920} height={1080} draggable="false"/>
+                        <Image src="/revenge-on-Inove/elevator.gif" alt="elevator gif" className=" bg-white p-2" width={1920} height={1080} draggable="false" priority={true}/>
                     </a>
                 </div>
             </div>

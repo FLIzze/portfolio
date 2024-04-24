@@ -24,15 +24,15 @@ const Forum = () => {
                     <div>
                         <p className="text-green-500 w-full flex justify-center my-6">[Home]</p>
                         <a href="/forum/home.png" target="blank">
-                            <Image src="/forum/home.png" draggable="false" alt="forum home" className="mb-6" width={1920} height={1080}/>
+                            <Image src="/forum/home.png" draggable="false" alt="forum home" className="mb-6" width={1920} height={1080} priority={true}/>
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Sujets]</p>
                         <a href="/forum/topic.png" target="blank">
-                            <Image src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6" width={1920} height={1080}/>
+                            <Image src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6" width={1920} height={1080} priority={true}/>
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Messages privés]</p>
                         <a href="/forum/mp.png" target="blank">
-                            <Image src="/forum/mp.png" draggable="false" alt="forum mp" className="pb-16" width={1920} height={1080}/>
+                            <Image src="/forum/mp.png" draggable="false" alt="forum mp" className="pb-16" width={1920} height={1080} priority={true}/>
                         </a>
                     </div>
                 </div>
