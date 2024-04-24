@@ -4,8 +4,10 @@ const Forum = () => {
     return (
         <div>
                 <div className="px-20 h-screen overflow-y-auto mt-10">
-                    <h1 className="text-4xl flex font-bold text-green-400">Forum</h1>
-                    <p className="my-6 text-xl">Forum moche mais fonctionnel. Realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
+                    <a href="https://forum.alexandrebel.me" target="blank">
+                        <h1 className="text-4xl flex font-bold text-green-400 border-b border-green-400 w-fit hover:border-b-0">Forum</h1>
+                    </a>
+                    <p className="my-6 text-xl">Forum entièrement fonctionnel. Realisé en <a className="text-green-400">golang</a> avec une base de données <a className="text-green-400">MySQL</a>.</p>
                     <div className="text-2xl">
                         <h2 className="font-bold text-green-400">Fonctionnalités</h2>
                         <ul className="mb-8 text-xl list-disc ml-10">
@@ -18,9 +20,14 @@ const Forum = () => {
                             <li>Consultation du profil d'un autre utilisateur et envoi de messages privés</li>
                             <li>Modification et suppression des sujets ou des commentaires appartenant à l'utilisateur</li>
                         </ul>
-                        <img src="/forum/home.png" draggable="false" alt="forum home" className="mb-6"/>
-                        <img src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6"/>
-                        <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
+                        <div className="text-xl">
+                            <p className="text-green-400 w-full flex justify-center my-6">[Home]</p>
+                            <img src="/forum/home.png" draggable="false" alt="forum home" className="mb-6"/>
+                            <p className="text-green-400 w-full flex justify-center my-6">[Sujets]</p>
+                            <img src="/forum/topic.png" draggable="false" alt="forum topic" className="mb-6"/>
+                            <p className="text-green-400 w-full flex justify-center my-6">[Messages privés]</p>
+                            <img src="/forum/mp.png" draggable="false" alt="forum mp" className="mb-16"/>
+                        </div>
                     </div>
                 </div>
         </div>
