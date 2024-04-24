@@ -16,18 +16,18 @@ export default function Home() {
   };
 
   return (
-    <div className="flex font-mono text-white bg-black lg:flex-row flex-col pt-10 lg:pt-0">
+    <div className="flex font-mono text-white bg-[#272727] lg:flex-row flex-col pt-10 lg:pt-0">
       <nav className="w-full transition-all duration-500 lg:w-80">
-        <div className="flex items-center justify-center h-fit lg:h-screen flex-col text-xl bg-black mb-2 lg:mb-0">
+        <div className="flex items-center justify-center h-fit lg:h-screen flex-col text-xl mb-2 lg:mb-0">
           {fields.map((field: string, index: number) => (
             <div className="lg:w-full w-2/3" key={index}>
                 {usedField != index ? (
                   <div>
-                      <p className="pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-black hover:bg-white hover:font-bold hover:text-black w-full cursor-pointer border-white border-b-2 lg:hover:w-[115%] transition-all duration-200 border-r border-l lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
+                      <p className="pr-4 text-white flex lg:justify-end justify-center lg:text-xl text-lg h-14 items-center bg-[#3d3d3d] hover:bg-white hover:font-bold hover:text-[#3a3737] w-full cursor-pointer border-white border-b-2 lg:hover:w-[115%] transition-all duration-200 border-r border-l lg:border-l-0 rounded-r-lg rounded-b-lg rounded-l-lg lg:rounded-l-none" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
                   </div>
                 ) : (
                   <div>
-                    <p className="flex lg:justify-end justify-center pr-4 lg:text-xl text-lg h-14 items-center bg-white text-black border-b border-black border-r-2 lg:rounded-l-none rounded-lg transition-all lg:w-[115%] font-bold" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
+                    <p className="flex lg:justify-end justify-center pr-4 lg:text-xl text-lg h-14 items-center bg-white text-[#4d4a4a] border-b border-[#4d4a4a] border-r-2 lg:rounded-l-none rounded-lg transition-all lg:w-[115%] font-bold" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
                   </div> 
                 )}
             </div>

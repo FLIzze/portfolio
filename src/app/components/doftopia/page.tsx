@@ -3,7 +3,7 @@ import Image from "next/image";
 const Doftopia = () => {
     return (
         <div>
-            <div className="lg:px-20 px-6 md:px-12 lg:h-screen h-full lg:overflow-y-auto mt-10 bg-black lg:bg-transparent md:text-xl text-base">
+            <div className="lg:px-20 px-6 md:px-12 lg:h-screen h-full lg:overflow-y-auto mt-10 bg-[#272727] lg:bg-transparent md:text-xl text-base">
                 <h1 className="md:text-4xl text-3xl flex font-bold text-green-500 w-fit hover:border-b-0">Doftopia</h1>
                 <p className="my-6 text-xl">Wiki dofus. Realisé en <a className="text-green-500">nextjs</a> <a className="text-green-500">typescript</a> avec une base de données <a className="text-green-500">MySQL</a> ainsi qu'un <a className="text-green-500">API</a>.</p>
                 <div>
