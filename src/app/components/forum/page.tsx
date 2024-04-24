@@ -4,7 +4,7 @@ import Image from "next/image";
 const Forum = () => {
     return (
         <div>
-            <div className="px-20 lg:h-screen h-full lg:overflow-y-auto mt-10 bg-black lg:bg-transparent">
+            <div className="lg:px-20 px-6 md:px-12 lg:h-screen h-full lg:overflow-y-auto mt-10 bg-black lg:bg-transparent md:text-xl text-base">
                 <a href="https://forum.alexandrebel.me" target="blank">
                     <h1 className="text-4xl flex font-bold text-green-500 border-b border-green-500 w-fit hover:border-b-0">Forum</h1>
                 </a>
