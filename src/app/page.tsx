@@ -4,19 +4,11 @@ import { useState } from "react";
 import About from "./components/about/page";
 import Forum from "./components/forum/page";
 import RevengeOnInove from "./components/revenge-on-inove/page";
-<<<<<<< HEAD
-import ImpostorBot from "./components/impostor-bot/page";
-=======
->>>>>>> e-commerce
 import Ecommerce from "./components/e-commerce/page";
 import Doftopia from "./components/doftopia/page";
 
 export default function Home() {
-<<<<<<< HEAD
-  const fields: string[] = ["A propos", "E-commerce", "Doftopia", "Revenge on Inove", "Forum", "BlackJack Data"];
-=======
   const fields: string[] = ["A propos", "Flowers", "Revenge on Inove", "Forum", "Doftopia"];
->>>>>>> e-commerce
   const [usedField, setUsedField] = useState<number>(0);
 
   const fieldFocus = (id: string) => {
@@ -24,6 +16,7 @@ export default function Home() {
   };
 
   return (
+    <div>
     <div className="flex font-mono text-white bg-[#272727] lg:flex-row flex-col pt-10 lg:pt-0">
       <nav className="w-full transition-all duration-500 lg:w-80">
         <div className="flex items-center justify-center h-fit lg:h-screen flex-col text-xl mb-2 lg:mb-0">
@@ -50,24 +43,6 @@ export default function Home() {
           ))}
         </div>
       </nav>
-<<<<<<< HEAD
-      <div className="w-4/5 h-screen overflow-hidden">
-        {fields[usedField] == "Forum" && (
-          <Forum/>
-        )}
-
-        {fields[usedField] == "Revenge on Inove" && (
-          <RevengeOnInove/>
-        )}
-
-        {fields[usedField] == "A propos" && (
-          <About/>
-        )}
-
-        {fields[usedField] == "E-commerce" && (
-          <Ecommerce/>
-        )}
-=======
       <div className="lg:w-4/5 h-screen lg:overflow-hidden">
         {fields[usedField] == "A propos" && (
           <About/>
@@ -84,8 +59,8 @@ export default function Home() {
         {fields[usedField] == "Doftopia" && (
           <Doftopia/>
         )}
->>>>>>> e-commerce
       </div>
+    </div>
     </div>
   );
 }
