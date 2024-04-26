@@ -6,16 +6,16 @@ const Ecommerce = () => {
                     <p className="my-5">Site d'e-commerce realise en <a className="text-green-400">Symfony</a> avec une base de donnee <a className="text-green-400">MySQL</a>.</p>
                     <h2 className="font-bold text-green-400 text-2xl">Fonctionnalités</h2>
                     <ul className="ml-12 list-disc text-justify">
-                        <li>Accueil: Explorez arrangements floraux, offres spéciales et collections saisonnières.</li>
-                        <li>Marketplace: Découvrez fleurs et compositions florales par catégories pour chaque occasion.</li>
-                        <li>Connexion/Création de compte: Gérez préférences, commandes ou bénéficiez d'avantages en créant un compte.</li>
-                        <li>Contactez-nous: Équipe service client disponible pour vous aider à choisir le bouquet parfait.</li>
-                        <li>Paramètres: Personnalisez expérience FLOWERS en ajustant préférences, infos personnelles et notifications.</li>
-                        <li>Tableau de bord: Suivez activités sur FLOWERS, articles préférés, commandes en cours, etc.</li>
-                        <li>Articles: Parcourez gamme d'articles floraux avec descriptions détaillées et images.</li>
-                        <li>Mettre en Vente: Partagez vos créations florales avec la communauté FLOWERS.</li>
-                        <li>Avis et Commentaires: Partagez expériences d'achat et lisez avis des autres clients.</li>
-                        <li>Panier: Ajoutez vos fleurs préférées et suivez facilement vos sélections.</li>
+                        <li>Accueil : Explorez arrangements floraux, offres spéciales et collections saisonnières.</li>
+                        <li>Marketplace : Découvrez fleurs et compositions florales par catégories pour chaque occasion.</li>
+                        <li>Connexion/Création de compte : Gérez préférences, commandes ou bénéficiez d'avantages en créant un compte.</li>
+                        <li>Contactez-nous : Équipe service client disponible pour vous aider à choisir le bouquet parfait.</li>
+                        <li>Paramètres : Personnalisez expérience FLOWERS en ajustant préférences, infos personnelles et notifications.</li>
+                        <li>Tableau de bord : Suivez activités sur FLOWERS, articles préférés, commandes en cours, etc.</li>
+                        <li>Articles : Parcourez gamme d'articles floraux avec descriptions détaillées et images.</li>
+                        <li>Mettre en Vente : Partagez vos créations florales avec la communauté FLOWERS.</li>
+                        <li>Avis et Commentaires : Partagez expériences d'achat et lisez avis des autres clients.</li>
+                        <li>Panier : Ajoutez vos fleurs préférées et suivez facilement vos sélections.</li>
                     </ul>   
                     <div>
                         <p className="text-green-400 w-full flex justify-center mb-4">[Home]</p>
