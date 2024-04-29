@@ -18,23 +18,63 @@ const Doftopia = () => {
                     <div>
                         <p className="text-green-500 w-full flex justify-center my-6">[Items]</p>
                         <a href="/doftopia/items.png" target="blank">
-                            <Image src="/doftopia/items.png" draggable="false" alt="doftopia home" className="mb-6" width={1920} height={1080} priority={true}/>
+                            <Image 
+                                src="/doftopia/items.png" 
+                                draggable="false" 
+                                alt="doftopia home" 
+                                className="mb-6" 
+                                width={1920} 
+                                height={1080} 
+                                priority={true} 
+                            />
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Item]</p>
                         <a href="/doftopia/item.png" target="blank">
-                            <Image src="/doftopia/item.png" draggable="false" alt="doftopia topic" className="mb-6" width={1920} height={1080} priority={true}/>
+                            <Image 
+                                src="/doftopia/item.png" 
+                                draggable="false" 
+                                alt="doftopia topic" 
+                                className="mb-6" 
+                                width={1920} 
+                                height={1080} 
+                                priority={true} 
+                            />
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Ressource]</p>
                         <a href="/doftopia/item_desc.png" target="blank">
-                            <Image src="/doftopia/item_desc.png" draggable="false" alt="doftopia mp" className="mb-6" width={1920} height={1080} priority={true}/>
+                            <Image 
+                                src="/doftopia/item_desc.png" 
+                                draggable="false" 
+                                alt="doftopia mp" 
+                                className="mb-6" 
+                                width={1920} 
+                                height={1080} 
+                                priority={true} 
+                            />
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Mobs]</p>
                         <a href="/doftopia/mobs.png" target="blank">
-                            <Image src="/doftopia/mobs.png" draggable="false" alt="doftopia mp" className="mb-6" width={1920} height={1080} priority={true}/>
+                            <Image 
+                                src="/doftopia/mobs.png" 
+                                draggable="false" 
+                                alt="doftopia mp" 
+                                className="mb-6" 
+                                width={1920} 
+                                height={1080} 
+                                priority={true} 
+                            />
                         </a>
                         <p className="text-green-500 w-full flex justify-center my-6">[Mob]</p>
                         <a href="/doftopia/mob.png" target="blank">
-                            <Image src="/doftopia/mob.png" draggable="false" alt="doftopia mp" className="pb-16" width={1920} height={1080} priority={true}/>
+                            <Image 
+                                src="/doftopia/mob.png" 
+                                draggable="false" 
+                                alt="doftopia mp" 
+                                className="pb-16" 
+                                width={1920} 
+                                height={1080} 
+                                priority={true} 
+                            />
                         </a>
                     </div>
                 </div>

@@ -17,11 +17,11 @@ export default function Home() {
 
   return (
     <div>
-    <div className="flex font-mono text-white bg-[#272727] lg:flex-row flex-col pt-10 lg:pt-0">
-      <nav className="w-full transition-all duration-500 lg:w-80">
-        <div className="flex items-center justify-center h-fit lg:h-screen flex-col text-xl mb-2 lg:mb-0">
-          {fields.map((field: string, index: number) => (
-            <div className="lg:w-full w-2/3" key={index}>
+      <div className="flex font-mono text-white bg-[#272727] lg:flex-row flex-col pt-10 lg:pt-0">
+        <nav className="w-full transition-all duration-500 lg:w-80">
+          <div className="flex items-center justify-center h-fit lg:h-screen flex-col text-xl mb-2 lg:mb-0">
+            {fields.map((field: string, index: number) => (
+              <div className="lg:w-full w-2/3" key={index}>
                 {usedField != index ? (
                   <div>
                     {index == 0 ? (
@@ -37,30 +37,30 @@ export default function Home() {
                 ) : (
                   <div>
                     <p className="flex lg:justify-end justify-center pr-4 lg:text-xl text-lg h-14 items-center bg-white text-[#4d4a4a] border-b border-[#4d4a4a] border-r-2 lg:rounded-l-none rounded-lg transition-all lg:w-[115%] font-bold" id={index.toString()} onClick={() => fieldFocus(index.toString())}>{field}</p>
-                  </div> 
+                  </div>
                 )}
-            </div>
-          ))}
+              </div>
+            ))}
+          </div>
+        </nav>
+        <div className="lg:w-4/5 h-screen lg:overflow-hidden">
+          {fields[usedField] == "A propos" && (
+            <About />
+          )}
+          {fields[usedField] == "Forum" && (
+            <Forum />
+          )}
+          {fields[usedField] == "Revenge on Inove" && (
+            <RevengeOnInove />
+          )}
+          {fields[usedField] == "Flowers" && (
+            <Ecommerce />
+          )}
+          {fields[usedField] == "Doftopia" && (
+            <Doftopia />
+          )}
         </div>
-      </nav>
-      <div className="lg:w-4/5 h-screen lg:overflow-hidden">
-        {fields[usedField] == "A propos" && (
-          <About/>
-        )}
-        {fields[usedField] == "Forum" && (
-          <Forum/>
-        )}
-        {fields[usedField] == "Revenge on Inove" && (
-          <RevengeOnInove/>
-        )}
-        {fields[usedField] == "Flowers" && (
-          <Ecommerce/>
-        )}
-        {fields[usedField] == "Doftopia" && (
-          <Doftopia/>
-        )}
       </div>
-    </div>
     </div>
   );
 }
