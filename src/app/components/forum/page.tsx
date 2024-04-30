@@ -1,7 +1,10 @@
 import React from "react";
-import Image from "next/image";
+import ImageComponent from "../image/main/page";
 
 const Forum = () => {
+    const images = ['home', 'topic', 'mp'];
+    const alts = ["Home", "Topic", "Mp"]
+
     return (
         <div>
             <div>
@@ -23,42 +26,11 @@ const Forum = () => {
                             <li>Modification et suppression des sujets ou des commentaires appartenant à l'utilisateur</li>
                         </ul>
                         <div>
-                            <p className="text-green-500 w-full flex justify-center my-6">[Home]</p>
-                            <a href="/forum/home.png" target="blank">
-                                <Image
-                                    src="/forum/home.png"
-                                    draggable="false"
-                                    alt="forum home"
-                                    className="mb-6"
-                                    width={1920}
-                                    height={1080}
-                                    priority={true}
-                                />
-                            </a>
-                            <p className="text-green-500 w-full flex justify-center my-6">[Sujets]</p>
-                            <a href="/forum/topic.png" target="blank">
-                                <Image
-                                    src="/forum/topic.png"
-                                    draggable="false"
-                                    alt="forum topic"
-                                    className="mb-6"
-                                    width={1920}
-                                    height={1080}
-                                    priority={true}
-                                />
-                            </a>
-                            <p className="text-green-500 w-full flex justify-center my-6">[Messages privés]</p>
-                            <a href="/forum/mp.png" target="blank">
-                                <Image
-                                    src="/forum/mp.png"
-                                    draggable="false"
-                                    alt="forum mp"
-                                    className="pb-16"
-                                    width={1920}
-                                    height={1080}
-                                    priority={true}
-                                />
-                            </a>
+                            {images.map((image, index) => (
+                                <div key={index}>
+                                    <ImageComponent src={`/forum/${image}.png`} alt={alts[index]} />
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

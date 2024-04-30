@@ -1,6 +1,9 @@
-import Image from "next/image";
+import ImageComponent from "../image/main/page";
 
 const Ecommerce = () => {
+    const images = ['home', 'marketplace', 'login', 'dashboard', 'article', 'reviews', "shopping-cart", 'shopping-cart-sidebar', 'checkout-details', 'stripe'];
+    const alts = ["home", "marketplace", "Login", "dashboard", "article", "reviews", "Shopping cart", "Shopping cart sidebar", 'Checkout details', 'Stripe'];
+
     return (
         <div>
             <div className="lg:px-20 px-6 md:px-12 lg:h-screen h-full lg:overflow-y-auto mt-10 bg-[#272727] lg:bg-transparent md:text-xl text-base">
@@ -22,106 +25,11 @@ const Ecommerce = () => {
                     <li>Panier : Ajoutez vos fleurs préférées à votre panier et suivez facilement vos sélections, avec la possibilité de créer plusieurs paniers pour différentes occasions.</li>
                 </ul>
                 <div>
-                    <p className="text-green-500 w-full flex justify-center my-6">[Home]</p>
-                    <a href="/e-commerce/home.png" target="blank">
-                        <Image
-                            src="/e-commerce/home.png"
-                            alt="home"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[Article]</p>
-                    <a href="/e-commerce/article.png" target="blank">
-                        <Image
-                            src="/e-commerce/article.png"
-                            alt="article"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[Review]</p>
-                    <a href="/e-commerce/reviews.png" target="blank">
-                        <Image
-                            src="/e-commerce/reviews.png"
-                            alt="reviews"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[Marketplace]</p>
-                    <a href="/e-commerce/marketplace.png" target="blank">
-                        <Image
-                            src="/e-commerce/marketplace.png"
-                            alt="marketplace"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[shopping-cart]</p>
-                    <a href="/e-commerce/shopping-cart-sidebar.png" target="blank">
-                        <Image
-                            src="/e-commerce/shopping-cart-sidebar.png"
-                            alt="sidebar shopping"
-                            className="my-3"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <a href="/e-commerce/shopping-cart.png" target="blank">
-                        <Image
-                            src="/e-commerce/shopping-cart.png"
-                            alt="shopping cart"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[checkout-details]</p>
-                    <a href="/e-commerce/checkout-details.png" target="blank">
-                        <Image
-                            src="/e-commerce/checkout-details.png"
-                            alt="checkout details"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[stripe]</p>
-                    <a href="/e-commerce/stripe.png" target="blank">
-                        <Image
-                            src="/e-commerce/stripe.png"
-                            alt="stripe"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
-                    <p className="text-green-500 w-full flex justify-center  my-6">[dashboard]</p>
-                    <a href="/e-commerce/dashboard.png" target="blank">
-                        <Image
-                            src="/e-commerce/dashboard.png"
-                            alt="dashboard"
-                            className="pb-16"
-                            width={1920}
-                            height={1080}
-                            draggable="false"
-                            priority={true}
-                        />
-                    </a>
+                    {images.map((image, index) => (
+                        <div key={index}>
+                            <ImageComponent src={`/e-commerce/${image}.png`} alt={alts[index]} />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
