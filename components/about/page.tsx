@@ -4,6 +4,7 @@ import AboutImage from "../image/about/page";
 const About = () => {
     const images = ['github', 'discord', 'linkedin'];
     const alts = ['Github', 'Discord', 'Linkedin'];
+    const href = ['https://github.com/flizze', 'https://discord.com/users/344636924050538506', 'https://www.linkedin.com/in/abel0/'];
 
     return (
         <div>
@@ -15,7 +16,7 @@ const About = () => {
                     <div className="flex gap-8">
                         {images.map((image, index) => (
                             <div key={index}>
-                                <AboutImage src={`/${image}.png`} alt={alts[index]} />
+                                <AboutImage src={`/${image}.png`} alt={alts[index]} href={href[index]} />
                             </div>
                         ))}
                     </div>
