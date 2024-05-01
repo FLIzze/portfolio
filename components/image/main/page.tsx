@@ -4,7 +4,10 @@ const MainImage = ({ src, alt }: { src: string, alt: string }): JSX.Element => {
     return (
         <div>
             <p className="text-green-500 w-full flex my-6 flex-col text-center">[{alt}]</p>
-            <a href={src} target="blank">
+            <a 
+                href={src} 
+                target="blank"
+            >
                 <Image
                     src={src}
                     draggable="false"

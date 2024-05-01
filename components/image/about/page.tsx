@@ -7,7 +7,10 @@ interface AboutImageProp {
 
 const AboutImage = ({ src, alt }: AboutImageProp) => {
     return (
-        <a href="https://github.com/flizze" target="blank">
+        <a 
+            href="https://github.com/flizze" 
+            target="blank"
+        >
             <Image
                 src={src}
                 alt={alt}
