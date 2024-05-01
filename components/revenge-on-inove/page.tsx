@@ -1,4 +1,4 @@
-import ImageComponent from "../image/main/page";
+import MainImage from "../image/main/page";
 
 const RevengeOnInove = () => {
     const images = ['dialogue', 'fight', 'elevator'];
@@ -26,7 +26,7 @@ const RevengeOnInove = () => {
                 <div>
                     {images.map((image, index) => (
                         <div key={index}>
-                            <ImageComponent src={`/revenge-on-Inove/${image}.gif`} alt={alts[index]} />
+                            <MainImage src={`/revenge-on-Inove/${image}.gif`} alt={alts[index]} />
                         </div>
                     ))}
                 </div>

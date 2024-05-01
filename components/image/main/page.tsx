@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ImageComponent = ({ src, alt }: { src: string, alt: string }) => {
+const MainImage = ({ src, alt }: { src: string, alt: string }): JSX.Element => {
     return (
         <div>
             <p className="text-green-500 w-full flex my-6 flex-col text-center">[{alt}]</p>
@@ -19,4 +19,4 @@ const ImageComponent = ({ src, alt }: { src: string, alt: string }) => {
     );
 };
 
-export default ImageComponent;
+export default MainImage;

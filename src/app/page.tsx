@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import About from "./components/about/page";
-import Forum from "./components/forum/page";
-import RevengeOnInove from "./components/revenge-on-inove/page";
-import Ecommerce from "./components/e-commerce/page";
-import Doftopia from "./components/doftopia/page";
+import About from "../../components/about/page";
+import Forum from "../../components/forum/page";
+import RevengeOnInove from "../../components/revenge-on-inove/page";
+import Ecommerce from "../../components/e-commerce/page";
+import Doftopia from "../../components/doftopia/page";
 
-export default function Home() {
+function Home() {
   const fields: string[] = ["A propos", "Flowers", "Revenge on Inove", "Forum", "Doftopia"];
   const [usedField, setUsedField] = useState<number>(0);
 
@@ -64,3 +64,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

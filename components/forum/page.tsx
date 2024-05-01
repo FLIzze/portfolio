@@ -1,5 +1,5 @@
 import React from "react";
-import ImageComponent from "../image/main/page";
+import MainImage from "../image/main/page";
 
 const Forum = () => {
     const images = ['home', 'topic', 'mp'];
@@ -28,7 +28,7 @@ const Forum = () => {
                         <div>
                             {images.map((image, index) => (
                                 <div key={index}>
-                                    <ImageComponent src={`/forum/${image}.png`} alt={alts[index]} />
+                                    <MainImage src={`/forum/${image}.png`} alt={alts[index]} />
                                 </div>
                             ))}
                         </div>

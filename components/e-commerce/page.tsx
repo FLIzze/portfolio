@@ -1,4 +1,4 @@
-import ImageComponent from "../image/main/page";
+import MainImage from "../image/main/page";
 
 const Ecommerce = () => {
     const images = ['home', 'marketplace', 'login', 'dashboard', 'article', 'reviews', "shopping-cart", 'shopping-cart-sidebar', 'checkout-details', 'stripe'];
@@ -27,7 +27,7 @@ const Ecommerce = () => {
                 <div>
                     {images.map((image, index) => (
                         <div key={index}>
-                            <ImageComponent src={`/e-commerce/${image}.png`} alt={alts[index]} />
+                            <MainImage src={`/e-commerce/${image}.png`} alt={alts[index]} />
                         </div>
                     ))}
                 </div>

@@ -1,4 +1,4 @@
-import ImageComponent from "../image/main/page";
+import MainImage from "../image/main/page";
 
 const Doftopia = () => {
     const images = ['items', 'item', 'item_desc', 'mobs', 'mob'];
@@ -21,7 +21,7 @@ const Doftopia = () => {
                     <div>
                         {images.map((image, index) => (
                             <div key={index}>
-                                <ImageComponent src={`/doftopia/${image}.png`} alt={alts[index]}/>
+                                <MainImage src={`/doftopia/${image}.png`} alt={alts[index]}/>
                             </div>
                         ))}
                     </div>

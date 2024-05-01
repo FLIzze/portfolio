@@ -1,6 +1,11 @@
 import Image from "next/image"
 
-const AboutImage = ({ src, alt }: { src: string, alt: string }) => {
+interface AboutImageProp {
+    src: string;
+    alt: string;
+}
+
+const AboutImage = ({ src, alt }: AboutImageProp) => {
     return (
         <a href="https://github.com/flizze" target="blank">
             <Image
